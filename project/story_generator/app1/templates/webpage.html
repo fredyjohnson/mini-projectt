@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Story Generator</title>
+</head>
+    <style>
+        .{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Lora', serif;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        nav{
+            flex:1;
+            text-align: right;
+        }
+        nav ul{
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        a{
+            text-decoration:none;
+            color:#555;
+        }
+            p{
+            color: #555;
+        }
+        .container{
+                max-width:1300px;
+                margin:auto;
+                padding-left: 25px;
+                padding-right: 25px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col-2{
+            flex-basis: 50%;
+            min-width: 300px;
+        }
+        .col-2 img{
+                max-width: 100%;
+                padding: 50px 0;
+        }
+        .col-2 h1{
+                font-size:50px;
+                line-height: 60px;
+                margin: 25px 0;
+        }
+        .btn{
+            display: inline-block;
+            background: #107bb9;
+            color: #16e789;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.55;
+        }
+        .btn:hover{
+            background:#563434;
+        }
+        .header{
+            background: radial-gradient(#c3f5a5,#e5e1eb);
+        }
+        .header .row{
+            margin-top: 70px;
+        }
+        .categories{
+            margin: 70px 0;
+        }
+        .col-3{
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        .col-3 img{
+            width: 100%;
+        }
+        .small-container{
+            max-width:1080px;
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .col-4{
+            flex-basis: 25%;
+            padding:1px;
+            min-width: 100px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+        }
+        .col-4 img{
+            width:80%;
+        }
+        .title{
+            text-align:center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+        }
+        .title::after{
+            content: '';
+            background: #ff523b;
+            width: 100px;
+            height:5px;
+            border-radius: 10px;
+            position:absolute;
+            bottom: 0;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        h4{
+            color: #555;
+            font-weight: normal;
+        }
+        .col-4 p{
+            font-size: 14px;
+        }
+        .col-4:hover{
+            transform: translatex(-5px);
+        }
+        .offer{
+            background: radial-gradient(#0e0000,#4a0339);
+            margin-top: 80px;
+            padding: 30px 0;
+        }
+        .offer-img{
+            width: 400px;
+        }
+        .footer{
+            background:#F883DC;
+            color: #000;
+            font-size: 14px;
+            padding: 60px 0 20px;
+        }
+        .logo-2{
+            display:block;
+            width:60%;
+            margin: auto;
+            width:100px;
+        }
+        .footer p{
+            color: #000;
+        }
+        .footer h3{
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+            min-width: 250px;
+            margin-bottom: 200px;
+        }
+        .footer-col-1{
+            flex-basis: 30%;
+        }
+        .footer-col-2{
+            flex: 1;
+            text-align: center;
+        }
+        .footer-col-2 img{
+            width: 180px;
+            margin-bottom: 20px;
+        }
+        .footer-col-3,.footer-col-4{
+            flex-basis: 32%;
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .app-logo{
+            margin-top: 20px;
+        }
+        .app-logo img{
+            width:140px;
+        }
+        .footer hr{
+            border: none;
+            background: #6fe3a2;
+            height: 1px;
+            margin: 20px 0;
+        }
+        .copyright{
+            text-align: center;
+        }
+
+        .body{
+            background: #6fe3a2; 
+        }
+
+
+
+
+
+    </style>
+
+
+<body class="body">
+
+
+<h1>Kids Story Generator</h1>
+
+<button onclick="generateStory()">Generate Story</button>
+
+<div id="story-container"></div>
+
+<div class="header">
+    <div class="container">
+     <div class="navbar">
+        <div class="logo">
+            <img src="\static\images\IMG_1733.JPG" width="125px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/loginpage/webpage/">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+
+
+
+
+            </ul>
+        </nav>
+         
+</div>
+        <div class="row">
+        <div class="col-2">
+            <h1> Something<br> Creative<br> Every day</h1>
+            <p>Creative activity could be described as a type of learning process.
+            <br> </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+
+        </div>
+        <div class="col-2">
+            <img src="\static\images\IMG_1860.JPG">
+            
+            
+
+        </div>
+    </div>
+
+ </div>
+</div>
+
+
+
+
+
+
+<script>
+    function generateStory() {
+        // Arrays with different story elements
+        var characters = ["Tom", "Alice", "Sunny the Bunny", "Molly the Mouse"];
+        var settings = ["in a magical forest", "at the top of a giant mountain", "under the sea", "in a faraway kingdom"];
+        var problems = ["lost their way home", "needed to find a hidden treasure", "had to rescue their friend"];
+
+        // Randomly select elements from each array
+        var character = characters[Math.floor(Math.random() * characters.length)];
+        var setting = settings[Math.floor(Math.random() * settings.length)];
+        var problem = problems[Math.floor(Math.random() * problems.length)];
+
+        // Create the story
+        var story = character + " was " + problem + " " + setting + ". ";
+
+        // Display the story in the HTML
+        document.getElementById("story-container").innerHTML = "<p>" + story + "</p>";
+    }
+</script>
+
+</body>
+</html>
